@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather Dashboard</title>
+
+<style>
+body{
+font-family: Arial;
+background:#1e3c72;
+color:white;
+text-align:center;
+}
+
+.container{
+margin-top:50px;
+}
+
+input{
+padding:10px;
+width:250px;
+}
+
+button{
+padding:10px;
+background:#00c6ff;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.weather-box{
+margin-top:30px;
+background:rgba(255,255,255,0.2);
+padding:20px;
+width:300px;
+margin-left:auto;
+margin-right:auto;
+border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Weather Dashboard</h1>
+
+<div class="container">
+
+<input type="text" id="cityInput" placeholder="Enter city name">
+<button id="searchBtn">Search</button>
+
+<div id="weatherResult" class="weather-box">
+<p>Enter a city to see weather</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
