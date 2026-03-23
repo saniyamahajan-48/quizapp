@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Weather Dashboard</title>
-
-<style>
-body{
-font-family: Arial;
-background:#1e3c72;
-color:white;
-text-align:center;
-}
-
-.container{
-margin-top:50px;
-}
-
-input{
-padding:10px;
-width:250px;
-}
-
-button{
-padding:10px;
-background:#00c6ff;
-border:none;
-color:white;
-cursor:pointer;
-}
-
-.weather-box{
-margin-top:30px;
-background:rgba(255,255,255,0.2);
-padding:20px;
-width:300px;
-margin-left:auto;
-margin-right:auto;
-border-radius:10px;
-}
-</style>
-
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Weather Dashboard</h1>
+<header>
+    <h1>Online Quiz App</h1>
+</header>
 
-<div class="container">
+<nav>
+    <a href="#home">Home</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#result">Result</a>
+</nav>
 
-<input type="text" id="cityInput" placeholder="Enter city name">
-<button id="searchBtn">Search</button>
+<section id="home">
+    <h2>Welcome</h2>
+    <p>Test your knowledge with our quiz!</p>
+</section>
 
-<div id="weatherResult" class="weather-box">
-<p>Enter a city to see weather</p>
-</div>
+<section id="quiz">
+    <h2>Quiz Section</h2>
 
-</div>
+    <article>
+        <p>1. What is HTML?</p>
+        <input type="radio" name="q1"> Programming Language<br>
+        <input type="radio" name="q1"> Markup Language<br>
+        <input type="radio" name="q1"> Database<br>
+    </article>
 
-<script src="script.js"></script>
+    <article>
+        <p>2. What does CSS stand for?</p>
+        <input type="radio" name="q2"> Color Style Sheet<br>
+        <input type="radio" name="q2"> Cascading Style Sheets<br>
+        <input type="radio" name="q2"> Computer Style System<br>
+    </article>
+
+</section>
+
+<section id="result">
+    <h2>Result</h2>
+    <p>Your score will be displayed here.</p>
+</section>
+
+<footer>
+    <p>© 2026 Quiz App</p>
+</footer>
 
 </body>
 </html>
